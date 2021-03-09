@@ -1,0 +1,744 @@
+{
+    "game": {
+        "width": 500,
+        "height": 500
+    },
+    "scenes": {
+        "scene 1": {
+            "config": {
+                "background": "#fafafa"
+            },
+            "assets": [
+                {
+                    "name": "bg",
+                    "x": "0",
+                    "y": "0",
+                    "type": "image",
+                    "src": "/assets/menus/bg.png",
+                    "flipX": false,
+                    "flipY": false,
+                    "scaleX": 1,
+                    "scaleY": 1,
+                    "alpha": 1,
+                    "angle": 0,
+                    "depth": 0,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "name": "super",
+                    "x": 250,
+                    "y": 9,
+                    "type": "image",
+                    "tweens": {
+                        "show": {
+                            "name": "show",
+                            "param": "x",
+                            "from": -100,
+                            "to": 250,
+                            "ease": "Back",
+                            "duration": 700,
+                            "loop": 0,
+                            "yoyo": false
+                        }
+                    },
+                    "start_tween": "show",
+                    "src": "/assets/menus/super.png",
+                    "flipX": false,
+                    "flipY": false,
+                    "scaleX": 1,
+                    "scaleY": 1,
+                    "alpha": 1,
+                    "angle": 0,
+                    "depth": 0,
+                    "originX": 0.5,
+                    "originY": 0,
+                    "visible": true,
+                    "load_only": false
+                },
+                {
+                    "name": "championship",
+                    "x": 250,
+                    "y": 180,
+                    "type": "image",
+                    "tweens": {
+                        "show": {
+                            "name": "show",
+                            "param": "x",
+                            "from": -200,
+                            "to": 250,
+                            "ease": "Back",
+                            "duration": 850,
+                            "loop": 0,
+                            "yoyo": false
+                        }
+                    },
+                    "start_tween": "show",
+                    "src": "/assets/menus/championship.png",
+                    "flipX": false,
+                    "flipY": false,
+                    "scaleX": 1,
+                    "scaleY": 1,
+                    "alpha": 1,
+                    "angle": 0,
+                    "depth": 0,
+                    "originX": 0.5,
+                    "originY": 0,
+                    "visible": true,
+                    "load_only": false
+                },
+                {
+                    "name": "explain",
+                    "x": 250,
+                    "y": 300,
+                    "type": "image",
+                    "tweens": {
+                        "show": {
+                            "name": "show",
+                            "param": "alpha",
+                            "from": 0,
+                            "to": 1,
+                            "ease": "Linear",
+                            "duration": 900,
+                            "loop": 0,
+                            "yoyo": false
+                        }
+                    },
+                    "start_tween": "show",
+                    "src": "/assets/menus/explain.png",
+                    "flipX": false,
+                    "flipY": false,
+                    "scaleX": 1,
+                    "scaleY": 1,
+                    "alpha": 1,
+                    "angle": 0,
+                    "depth": 0,
+                    "originX": 0.5,
+                    "originY": 0,
+                    "visible": true,
+                    "load_only": false
+                },
+                {
+                    "name": "fishing",
+                    "x": 250,
+                    "y": 78,
+                    "type": "image",
+                    "tweens": {
+                        "show": {
+                            "name": "show",
+                            "param": "x",
+                            "from": -100,
+                            "to": 250,
+                            "ease": "Back",
+                            "duration": 800,
+                            "loop": 0,
+                            "yoyo": false
+                        }
+                    },
+                    "start_tween": "show",
+                    "src": "/assets/menus/fishing.png",
+                    "flipX": false,
+                    "flipY": false,
+                    "scaleX": 1,
+                    "scaleY": 1,
+                    "alpha": 1,
+                    "angle": 0,
+                    "depth": 0,
+                    "originX": 0.5,
+                    "originY": 0,
+                    "visible": true,
+                    "load_only": false
+                },
+                {
+                    "name": "uigo",
+                    "x": 250,
+                    "y": 425,
+                    "type": "sprite",
+                    "tweens": {
+                        "show": {
+                            "name": "show",
+                            "param": "y",
+                            "from": 555,
+                            "to": 425,
+                            "ease": "Back",
+                            "duration": 850,
+                            "loop": 0,
+                            "yoyo": false
+                        }
+                    },
+                    "start_tween": "show",
+                    "src": "/assets/menus/uigo.png",
+                    "flipX": false,
+                    "flipY": false,
+                    "scaleX": 1,
+                    "scaleY": 1,
+                    "alpha": 1,
+                    "angle": 0,
+                    "depth": 0,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "visible": true,
+                    "load_only": false,
+                    "animations": {
+                        "idle": {
+                            "name": "idle",
+                            "frames": [
+                                0
+                            ],
+                            "frameRate": 0,
+                            "repeat": 0
+                        },
+                        "over": {
+                            "name": "over",
+                            "frames": [
+                                1
+                            ],
+                            "frameRate": 8,
+                            "repeat": 0
+                        },
+                        "down": {
+                            "name": "down",
+                            "frames": [
+                                2
+                            ],
+                            "frameRate": 8,
+                            "repeat": 0
+                        }
+                    },
+                    "width": 55,
+                    "height": 60,
+                    "start_anim": "idle"
+                }
+            ]
+        },
+        "scene 2": {
+            "config": {
+                "background": "#fafafa"
+            },
+            "assets": [
+                {
+                    "name": "bg",
+                    "x": 0,
+                    "y": 0,
+                    "type": "image",
+                    "src": "/assets/menus/bg.png",
+                    "flipX": false,
+                    "flipY": false,
+                    "scaleX": 1,
+                    "scaleY": 1,
+                    "alpha": 1,
+                    "angle": 0,
+                    "depth": 0,
+                    "originX": 0,
+                    "originY": 0,
+                    "tweens": {},
+                    "start_tween": "",
+                    "visible": true,
+                    "load_only": false
+                },
+                {
+                    "name": "boat",
+                    "x": 203,
+                    "y": 155,
+                    "type": "image",
+                    "src": "/assets/gamescene/boat.png",
+                    "flipX": false,
+                    "flipY": false,
+                    "scaleX": 1,
+                    "scaleY": 1,
+                    "alpha": 1,
+                    "angle": 0,
+                    "depth": 0,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "name": "water_particle",
+                    "x": 306,
+                    "y": 174,
+                    "type": "particle",
+                    "tweens": {},
+                    "start_tween": "",
+                    "src": "/assets/gamescene/water.png",
+                    "flipX": false,
+                    "flipY": false,
+                    "scaleX": 1,
+                    "scaleY": 1,
+                    "alpha": 1,
+                    "angle": 0,
+                    "depth": 0,
+                    "originX": 0,
+                    "originY": 0,
+                    "params": {
+                        "speedY": {
+                            "param": "speedY",
+                            "min": 50,
+                            "max": 50
+                        },
+                        "scale": {
+                            "param": "scale",
+                            "start": 1,
+                            "end": 0
+                        },
+                        "alpha": {
+                            "param": "alpha",
+                            "start": 1,
+                            "end": 0
+                        }
+                    },
+                    "blendMode": "SKIP_CHECK",
+                    "frequency": 500
+                },
+                {
+                    "name": "water",
+                    "x": 298,
+                    "y": 165,
+                    "type": "image",
+                    "tweens": {},
+                    "start_tween": "",
+                    "src": "/assets/gamescene/water.png",
+                    "flipX": false,
+                    "flipY": false,
+                    "scaleX": 1,
+                    "scaleY": 1,
+                    "alpha": 1,
+                    "angle": 0,
+                    "depth": 0,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "name": "float",
+                    "x": 303,
+                    "y": 169,
+                    "type": "image",
+                    "src": "/assets/gamescene/float.png",
+                    "flipX": false,
+                    "flipY": false,
+                    "scaleX": 1,
+                    "scaleY": 1,
+                    "alpha": 1,
+                    "angle": 0,
+                    "depth": 0,
+                    "originX": 0,
+                    "originY": 0,
+                    "tweens": {},
+                    "start_tween": "",
+                    "visible": true,
+                    "load_only": false
+                },
+                {
+                    "name": "hero",
+                    "x": 216,
+                    "y": 152,
+                    "type": "image",
+                    "src": "/assets/gamescene/hero.png",
+                    "flipX": false,
+                    "flipY": false,
+                    "scaleX": 1,
+                    "scaleY": 1,
+                    "alpha": 1,
+                    "angle": 0,
+                    "depth": 0,
+                    "originX": 0,
+                    "originY": 0,
+                    "tweens": {},
+                    "start_tween": "",
+                    "visible": true,
+                    "load_only": false
+                },
+                {
+                    "name": "notiftext",
+                    "x": 250,
+                    "y": 300,
+                    "type": "text",
+                    "text": "REEL!",
+                    "style": {
+                        "fontSize": "42px",
+                        "fontFamily": "Tahoma"
+                    },
+                    "depth": 0,
+                    "flipX": false,
+                    "flipY": false,
+                    "scaleX": 1,
+                    "scaleY": 1,
+                    "alpha": 0,
+                    "angle": 0,
+                    "originX": 0.5,
+                    "originY": 0,
+                    "tweens": {},
+                    "start_tween": ""
+                },
+                {
+                    "name": "gaugegroupe",
+                    "x": 250,
+                    "y": 600,
+                    "type": "container",
+                    "tweens": {
+                        "show": {
+                            "name": "show",
+                            "param": "y",
+                            "from": 600,
+                            "to": 400,
+                            "ease": "Back.easeOut",
+                            "duration": 600,
+                            "loop": 0,
+                            "yoyo": false
+                        },
+                        "hide": {
+                            "name": "hide",
+                            "param": "y",
+                            "from": 400,
+                            "to": 600,
+                            "ease": "Cubic.easeIn",
+                            "duration": 600,
+                            "loop": 0,
+                            "yoyo": false
+                        }
+                    },
+                    "start_tween": "",
+                    "flipX": false,
+                    "flipY": false,
+                    "scaleX": 1,
+                    "scaleY": 1,
+                    "alpha": 1,
+                    "assets": [
+                        {
+                            "name": "controlbg",
+                            "x": -239,
+                            "y": -10,
+                            "type": "image",
+                            "tweens": {},
+                            "start_tween": "",
+                            "parent": "gaugegroupe",
+                            "src": "/assets/gamescene/controlbg.png",
+                            "flipX": false,
+                            "flipY": false,
+                            "scaleX": 1,
+                            "scaleY": 1,
+                            "alpha": 1
+                        },
+                        {
+                            "name": "fishgauge",
+                            "x": 10,
+                            "y": 0,
+                            "type": "image",
+                            "src": "/assets/gamescene/fishgauge.png",
+                            "flipX": false,
+                            "flipY": false,
+                            "scaleX": 1,
+                            "scaleY": 1,
+                            "alpha": 1,
+                            "angle": 0,
+                            "depth": 0,
+                            "originX": 0.5,
+                            "originY": 0,
+                            "tweens": {},
+                            "start_tween": ""
+                        },
+                        {
+                            "name": "linegauge",
+                            "x": 10,
+                            "y": 41,
+                            "type": "image",
+                            "src": "/assets/gamescene/linegauge.png",
+                            "flipX": false,
+                            "flipY": false,
+                            "scaleX": 1,
+                            "scaleY": 1,
+                            "alpha": 1,
+                            "angle": 0,
+                            "depth": 0,
+                            "originX": 0.5,
+                            "originY": 0,
+                            "tweens": {},
+                            "start_tween": ""
+                        },
+                        {
+                            "name": "fishgaugebar",
+                            "x": 0,
+                            "y": 6,
+                            "type": "image",
+                            "src": "/assets/gamescene/fishgaugebar.png",
+                            "flipX": false,
+                            "flipY": false,
+                            "scaleX": 1,
+                            "scaleY": 1,
+                            "alpha": 1,
+                            "angle": 0,
+                            "depth": 1,
+                            "originX": 0,
+                            "originY": 0,
+                            "tweens": {},
+                            "start_tween": ""
+                        },
+                        {
+                            "name": "linegaugebar",
+                            "x": 0,
+                            "y": 47,
+                            "type": "image",
+                            "src": "/assets/gamescene/linegaugebar.png",
+                            "flipX": false,
+                            "flipY": false,
+                            "scaleX": 1,
+                            "scaleY": 1,
+                            "alpha": 1,
+                            "angle": 0,
+                            "depth": 1,
+                            "originX": 0,
+                            "originY": 0,
+                            "tweens": {},
+                            "start_tween": ""
+                        },
+                        {
+                            "name": "breakup",
+                            "x": -215,
+                            "y": 10,
+                            "type": "image",
+                            "tweens": {
+                                "click": {
+                                    "name": "click",
+                                    "param": "scale",
+                                    "from": 1,
+                                    "to": 1.2,
+                                    "ease": "Linear",
+                                    "duration": 200,
+                                    "loop": 0,
+                                    "yoyo": true
+                                }
+                            },
+                            "start_tween": "",
+                            "src": "/assets/gamescene/breakup.png",
+                            "flipX": false,
+                            "flipY": false,
+                            "scaleX": 1,
+                            "scaleY": 1,
+                            "alpha": 1,
+                            "angle": 0,
+                            "depth": 0,
+                            "originX": 0.5,
+                            "originY": 0.5
+                        },
+                        {
+                            "name": "breaklogo",
+                            "x": -234,
+                            "y": 32,
+                            "type": "image",
+                            "tweens": {},
+                            "start_tween": "",
+                            "src": "/assets/gamescene/breaklogo.png",
+                            "flipX": false,
+                            "flipY": false,
+                            "scaleX": 1,
+                            "scaleY": 1,
+                            "alpha": 1,
+                            "angle": 0,
+                            "depth": 0,
+                            "originX": 0,
+                            "originY": 0
+                        },
+                        {
+                            "name": "breakdown",
+                            "x": -215,
+                            "y": 72,
+                            "type": "image",
+                            "tweens": {
+                                "click": {
+                                    "name": "click",
+                                    "param": "scale",
+                                    "from": 1,
+                                    "to": 1.2,
+                                    "ease": "Linear",
+                                    "duration": 200,
+                                    "loop": 0,
+                                    "yoyo": true
+                                }
+                            },
+                            "start_tween": "",
+                            "src": "/assets/gamescene/breakdown.png",
+                            "flipX": false,
+                            "flipY": false,
+                            "scaleX": 1,
+                            "scaleY": 1,
+                            "alpha": 1,
+                            "angle": 0,
+                            "depth": 0,
+                            "originX": 0.5,
+                            "originY": 0.5
+                        },
+                        {
+                            "name": "breaktext",
+                            "x": -215,
+                            "y": 40,
+                            "type": "text",
+                            "tweens": {},
+                            "start_tween": "",
+                            "parent": "gaugegroupe",
+                            "text": "100%",
+                            "style": {
+                                "fontSize": "14px",
+                                "fontFamily": "Tahoma"
+                            },
+                            "flipX": false,
+                            "flipY": false,
+                            "scaleX": 1,
+                            "scaleY": 1,
+                            "alpha": 1,
+                            "originX": 0.5,
+                            "originY": 0.5
+                        }
+                    ]
+                },
+                {
+                    "name": "scoretext",
+                    "x": 20,
+                    "y": 10,
+                    "type": "text",
+                    "tweens": {},
+                    "start_tween": "",
+                    "text": "score: 0",
+                    "style": {
+                        "fontSize": "22px",
+                        "fontFamily": "Tahoma"
+                    },
+                    "flipX": false,
+                    "flipY": false,
+                    "scaleX": 1,
+                    "scaleY": 1,
+                    "alpha": 1,
+                    "visible": true,
+                    "load_only": false
+                },
+                {
+                    "name": "fishtrail",
+                    "x": 286,
+                    "y": 163,
+                    "type": "image",
+                    "tweens": {},
+                    "start_tween": "",
+                    "src": "/assets/gamescene/fishtrail.png",
+                    "flipX": false,
+                    "flipY": false,
+                    "scaleX": 1,
+                    "scaleY": 1,
+                    "alpha": 0,
+                    "angle": 0,
+                    "depth": 0,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "name": "winui",
+                    "x": 250,
+                    "y": 145,
+                    "type": "container",
+                    "tweens": {},
+                    "start_tween": "",
+                    "flipX": false,
+                    "flipY": false,
+                    "scaleX": 1,
+                    "scaleY": 1,
+                    "alpha": 1,
+                    "visible": true,
+                    "load_only": true,
+                    "originX": 0.5,
+                    "assets": [
+                        {
+                            "name": "winuibg",
+                            "x": 0,
+                            "y": 0,
+                            "type": "image",
+                            "tweens": {},
+                            "start_tween": "",
+                            "src": "/assets/gamescene/winuibg.png",
+                            "flipX": false,
+                            "flipY": false,
+                            "scaleX": 1,
+                            "scaleY": 1,
+                            "alpha": 1,
+                            "angle": 0,
+                            "depth": 0,
+                            "originX": 0.5,
+                            "originY": 0,
+                            "visible": true,
+                            "load_only": false
+                        },
+                        {
+                            "name": "winuigo",
+                            "x": 0,
+                            "y": 185,
+                            "type": "image",
+                            "tweens": {
+                                "click": {
+                                    "name": "click",
+                                    "param": "scale",
+                                    "from": 1,
+                                    "to": 1.2,
+                                    "ease": "Linear",
+                                    "duration": 200,
+                                    "loop": 0,
+                                    "yoyo": true
+                                }
+                            },
+                            "start_tween": "",
+                            "src": "/assets/gamescene/winuigo.png",
+                            "flipX": false,
+                            "flipY": false,
+                            "scaleX": 1,
+                            "scaleY": 1,
+                            "alpha": 1,
+                            "angle": 0,
+                            "depth": 0,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "visible": true,
+                            "load_only": false
+                        },
+                        {
+                            "name": "winuitext",
+                            "x": 0,
+                            "y": 50,
+                            "type": "text",
+                            "tweens": {},
+                            "start_tween": "",
+                            "parent": "winui",
+                            "text": "Congratz",
+                            "style": {
+                                "fontSize": "30px",
+                                "fontFamily": "Tahoma"
+                            },
+                            "flipX": false,
+                            "flipY": false,
+                            "scaleX": 1,
+                            "scaleY": 1,
+                            "alpha": 1,
+                            "visible": true,
+                            "load_only": false,
+                            "originX": 0.5
+                        }
+                    ]
+                },
+                {
+                    "name": "timetext",
+                    "x": 370,
+                    "y": 10,
+                    "type": "text",
+                    "tweens": {},
+                    "start_tween": "",
+                    "text": "time: 0",
+                    "style": {
+                        "fontSize": "22px",
+                        "fontFamily": "Tahoma"
+                    },
+                    "flipX": false,
+                    "flipY": false,
+                    "scaleX": 1,
+                    "scaleY": 1,
+                    "alpha": 1,
+                    "visible": true,
+                    "load_only": false
+                }
+            ]
+        }
+    }
+}
